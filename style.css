@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
   padding: 24px;
 }
 .site-list__link {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -144,7 +144,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-bottom: 133px;
 
-  font-family: "Roboto", serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -160,7 +160,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 47px;
   width: 456px;
 
-  font-family: "Roboto", serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -236,7 +236,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-bottom: 14px;
 
-  font-family: "Roboto", serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
