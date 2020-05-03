@@ -71,10 +71,21 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav {
-  width: 1220px; /* 1170 +24 +24 */
+  width: 1220px; /* 1170 (ширина блока) +24 +24(padding-и элементов навигации site__item) */
   margin: 0 auto;
   padding: 0;
   margin-bottom: 23px;
+}
+.main-nav__link--header {
+  color: #000000;
+}
+.main-nav__link--footer {
+  color: #ffffff;
+}
+.main-nav__link--header:hover,
+.main-nav__link--footer:hover {
+  color: #FF7931;
+  transition: 0.25s;
 }
 
 .site-list {
@@ -107,12 +118,13 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
+
+/* основной блок */
+
 .gallery {
   width: 1440px;
   margin: 0 auto;
   padding: 0;
-/*
-  line-height: 0; */
 }
 .gallery__item {
   position: relative;
@@ -209,8 +221,12 @@ input[type="radio"].visually-hidden {
 
   align-items: flex-start;
 }
-.review--active .review__title {
+.review__wrapper {
+  text-decoration: none;
+}
+.review__wrapper:hover .review__title  {
   color: #FF7931;
+  transition: 0.25s;
 }
 .review__img {
   margin: 0;
@@ -271,7 +287,7 @@ input[type="radio"].visually-hidden {
 }
 .season-ticket__common-title {
   margin: 0;
-  margin-left: -8px; /* !!! */
+  margin-left: -8px; /* ! - выравнивал PerfectPixel*/
   padding: 0;
   margin-top: 34px;
   margin-bottom: 36px;
@@ -369,6 +385,13 @@ input[type="radio"].visually-hidden {
   right: 29px;
   top: 11px;
 }
+.season-ticket__to-see:hover {
+  opacity: 0.7;
+  transition: 0.25s;
+}
+
+
+/* footer */
 
 .page-footer {
   display: flex;
@@ -417,14 +440,6 @@ input[type="radio"].visually-hidden {
   transform: translate(-50%,0);
 }
 
-.main-nav__link--header {
-  color: #000000;
-}
-
-.main-nav__link--footer {
-  color: #ffffff;
-}
-
 .social__list {
   width: 170px;
   display: flex;
@@ -453,4 +468,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   background-color: #ffffff;
+}
+.social__link:hover {
+  opacity: 0.7;
+  transition: 0.25s;
 }
